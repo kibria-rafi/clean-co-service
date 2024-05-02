@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom"
+import Layout from "./components/layout/MainLayout"
 
 
 function App() {
@@ -5,8 +7,9 @@ function App() {
 
   return (
     <>
-      
-      <h1>Hello world!!!</h1>
+      <Layout>
+        <Outlet/>
+      </Layout>
     </>
   )
 }
