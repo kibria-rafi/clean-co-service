@@ -36,11 +36,54 @@ const MainLayout = ({ children }) => {
           <div className="flex-none hidden lg:block">
             <ul className="flex gap-4">
               {/* Navbar menu content here */}
-              <NavLink className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : "" to="/about" >About</NavLink>
-              <NavLink to="/contact">Contact</NavLink>
-              <NavLink to="/login">Login</NavLink>
-              <NavLink to="/register">Register</NavLink>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    : ""
+                }
+                to="/about"
+              >
+                About
+              </NavLink>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    : ""
+                }
+                to="/contact"
+              >
+                Contact
+              </NavLink>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    : ""
+                }
+                to="/login"
+              >
+                Login
+              </NavLink>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    : ""
+                }
+                to="/register"
+              >
+                Register
+              </NavLink>
             </ul>
           </div>
         </div>
@@ -55,10 +98,34 @@ const MainLayout = ({ children }) => {
         ></label>
         <div className="menu p-4 w-80 min-h-full space-y-5 text-white bg-black">
           {/* Sidebar content here */}
-          <NavLink to="/about" >About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-          <NavLink to="/login">Login</NavLink>
-          <NavLink to="/register">Register</NavLink>
+          <NavLink  className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    : ""
+                } to="/about">About</NavLink>
+          <NavLink className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    : ""
+                } to="/contact">Contact</NavLink>
+          <NavLink className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    : ""
+                } to="/login">Login</NavLink>
+          <NavLink className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    : ""
+                } to="/register">Register</NavLink>
         </div>
       </div>
     </div>
