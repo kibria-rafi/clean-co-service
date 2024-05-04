@@ -7,7 +7,7 @@ const MainLayout = ({ children }) => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar bg-base-300">
+        <div className="w-full md:px-80 navbar bg-base-300">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -41,7 +41,7 @@ const MainLayout = ({ children }) => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-white"
                     : ""
                 }
                 to="/about"
@@ -53,7 +53,7 @@ const MainLayout = ({ children }) => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-white"
                     : ""
                 }
                 to="/contact"
@@ -65,7 +65,7 @@ const MainLayout = ({ children }) => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-white"
                     : ""
                 }
                 to="/login"
@@ -77,7 +77,7 @@ const MainLayout = ({ children }) => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-black rounded-lg px-3 py-1 text-white"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-white"
                     : ""
                 }
                 to="/register"
@@ -102,28 +102,28 @@ const MainLayout = ({ children }) => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-black"
                     : ""
                 } to="/about">About</NavLink>
           <NavLink className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-black"
                     : ""
                 } to="/contact">Contact</NavLink>
           <NavLink className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-black"
                     : ""
                 } to="/login">Login</NavLink>
           <NavLink className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-white rounded-lg px-3 py-1 text-black"
+                    ? "bg-green-500 rounded-lg px-3 py-1 text-black"
                     : ""
                 } to="/register">Register</NavLink>
         </div>
